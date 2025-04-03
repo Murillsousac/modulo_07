@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parquimetro</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Parquimetro</h1>
+        <p>informe um valor, e a aplicação calculará o tempo de permanência e o troco (se houver)
+            TEMPO MAXIMO: 120 MINUTOS
+            PREÇO DA TARIFA: R$ 1,00 = 30 min
+        </p>
+    </header>
+    <main>
+        <section>
+        <label for="valor">valor</label>
+        <input type="number"  id="valor">
+        <button type="button" onclick="parq.calcularEstacionamento()">calcular</button>
+        </section>
+
+        <section>
+            <h3 id="tempo"></h3>
+            <h3 id="troco"></h3>
+        </section>
+    </main>
+</body>
+</html>
